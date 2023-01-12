@@ -4,7 +4,7 @@
     "url": "git@github.com:Chadtao206/lint-jesus.git"
   },
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "sets up eslint and prettier for your project",
   "type": "module",
   "main": "index.js",
