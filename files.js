@@ -1,6 +1,4 @@
-const eslintIgnore = `
-node_modules
-`;
+const eslintIgnore = `node_modules`;
 const eslintJSON = `
 {
     "root": true,
@@ -30,22 +28,23 @@ const eslintJSON = `
       "indent": ["error", 2],
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
-      "no-undef": "error"
+      "no-undef": "error",
+      "arrow-parens": "error"
     },
     "extends": ["prettier"]
   }  
 `;
 
-const prettierIgnore = `
-node_modules
-`;
+const prettierIgnore = `node_modules`;
 
 const prettierJSON = `
 {
     "arrowParens": "always",
     "singleQuote": true,
     "trailingComma": "none",
-    "semi": true
+    "semi": true,
+    "endOfLine": "lf",
+    "tabWidth": 2
 }
 `;
 
@@ -53,5 +52,5 @@ export default [
   { path: "./.eslintignore", content: eslintIgnore },
   { path: "./.eslintrc.json", content: eslintJSON },
   { path: "./.prettierignore", content: prettierIgnore },
-  { path: "./.prettierrc", content: prettierJSON },
+  { path: "./.prettierrc.json", content: prettierJSON },
 ];

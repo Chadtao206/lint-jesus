@@ -30,6 +30,7 @@ const main = async () => {
     'npm pkg set scripts.format="npx prettier **/* -w --ignore-unknown"'
   );
 
+  spinner.text = "Adding Husky and cleaning up...";
   //add husky
   execSync(
     'npm run prepare && npx husky add .husky/pre-commit "npm run format && npm run lint:fix"'
@@ -37,6 +38,7 @@ const main = async () => {
 
   execSync("npm run format");
 
+  spinner.stop();
   console.log("✨✨✨ All done! Happy Salvation! ✨✨✨");
 };
 
