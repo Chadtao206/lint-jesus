@@ -1,0 +1,25 @@
+{
+  "name": "@chadtao/lint-jesus",
+  "repository": {
+    "url": "git@github.com:Chadtao206/lint-jesus.git"
+  },
+  "private": false,
+  "version": "0.1.1",
+  "description": "sets up eslint and prettier for your project",
+  "type": "module",
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2"
+  }
+}
